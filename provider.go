@@ -35,10 +35,10 @@ func Provider() *schema.Provider {
 		},
 
 		ResourcesMap: map[string]*schema.Resource{
-			"stingray_pool":             resourcePool(),
-			"stingray_rule":             resourceRule(),
-			"stingray_traffic_ip_group": resourceTrafficIPGroup(),
-			"stingray_virtual_server":   resourceVirtualServer(),
+			"brocade_pool":             resourcePool(),
+			"brocade_rule":             resourceRule(),
+			"brocade_traffic_ip_group": resourceTrafficIPGroup(),
+			"brocade_virtual_server":   resourceVirtualServer(),
 		},
 
 		ConfigureFunc: providerConfigure,
