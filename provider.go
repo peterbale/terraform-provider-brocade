@@ -39,6 +39,7 @@ func Provider() *schema.Provider {
 			"brocade_rule":             resourceRule(),
 			"brocade_traffic_ip_group": resourceTrafficIPGroup(),
 			"brocade_virtual_server":   resourceVirtualServer(),
+			"brocade_ssl_server_key":   resourceSSLServerKey(),
 		},
 
 		ConfigureFunc: providerConfigure,
